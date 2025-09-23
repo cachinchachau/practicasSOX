@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{252d5770-c90d-4df9-9bd4-63c45e4bb629}</ProjectGuid>
-    <RootNamespace>ProyectoClase1</RootNamespace>
+    <ProjectGuid>{26a9fa4b-72a8-463d-ba17-0ecd663369d2}</ProjectGuid>
+    <RootNamespace>engSoftw1test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,15 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2InputSystem\InputSystem.cpp" />
-    <ClCompile Include="Utils\consoleControl.cpp" />
-    <ClCompile Include="ProyectoClase1.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="2InputSystem\InputConst.h" />
-    <ClInclude Include="2InputSystem\InputSystem.h" />
-    <ClInclude Include="Utils\consoleControl.h" />
-    <ClInclude Include="TutorialThreads\ThreadTutorial.h" />
+    <ClCompile Include="engSoftw1test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
