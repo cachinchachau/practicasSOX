@@ -18,10 +18,10 @@
     <ClCompile Include="ProyectoClase1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Utils\consoleControl.cpp">
+    <ClCompile Include="2InputSystem\InputSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="2InputSystem\InputSystem.cpp">
+    <ClCompile Include="Utils\ConsoleControl\ConsoleControl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,13 +29,13 @@
     <ClInclude Include="TutorialThreads\ThreadTutorial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils\consoleControl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="2InputSystem\InputConst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="2InputSystem\InputSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ConsoleControl\ConsoleControl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

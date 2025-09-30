@@ -1,38 +1,28 @@
 #include <iostream>
 
 //#include "TutorialThreads/ThreadTutorial.h"
-#include "Utils/consoleControl.h"
+#include "Utils\ConsoleControl\ConsoleControl.h"
+#include "2InputSystem\InputSystem.h"
 
-#include <functional>
-#include <string>
-#include <list>
-
-typedef std::function<int(int, int)> SumaFunction;
-
-void TestLambdasMolonas(std::function<int(int, int)> funcionMolona)
-{
-    std::cout << "Voy a ejecutar una funcuion que estaba en una variable" << std::endl;
-
-    int number = funcionMolona(9, 10);
-
-    std::cout << "Ya la he ejecutado" << std::endl;
-}
 
 int main()
 {
-    std::string name = "Pepe";
+ 
+    InputSystem* iS = new InputSystem();
 
-    std::list<std::list<int>> listaDeListas;
+    InputSystem::KeyBinding* kb1 = iS->AddListener(K_1, []() {
+        CC::Lock();
+        std::cout << "pressed 1" << std::endl;
+        CC::Unlock();
+        });
 
-    SumaFunction funcionQueHaceCosasPeroEsUnaVariable = [name](int a, int b) {
 
-        std::cout << "Esto no se como pero funciona y me dice mi nombre --> " << name << std::endl;
-        return a + b;
-        };
-     
+    iS->StartListen();
 
-    TestLambdasMolonas(funcionQueHaceCosasPeroEsUnaVariable);
-    
+    while (true)
+    {
+
+    }
 
     return 9;
 }

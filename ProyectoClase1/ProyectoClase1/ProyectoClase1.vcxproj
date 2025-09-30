@@ -124,13 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2InputSystem\InputSystem.cpp" />
-    <ClCompile Include="Utils\consoleControl.cpp" />
+    <ClCompile Include="Utils\ConsoleControl\ConsoleControl.cpp" />
     <ClCompile Include="ProyectoClase1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2InputSystem\InputConst.h" />
     <ClInclude Include="2InputSystem\InputSystem.h" />
-    <ClInclude Include="Utils\consoleControl.h" />
+    <ClInclude Include="Utils\ConsoleControl\ConsoleControl.h" />
     <ClInclude Include="TutorialThreads\ThreadTutorial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
